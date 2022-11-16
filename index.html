@@ -5,29 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
+    <!--css padrão-->
+    <link rel="stylesheet" href="estilos/estilo-padrao.css">
+    <!-- css bootstrap -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <!-- Navbar fixa -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <a class="navbar-brand" href="#"> Notas To Do </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  <header>
+    <!-- Navbar fixa -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark row">
+      <a class="navbar-brand col-11 ml-5" href="#"> Notas To Do </a>
 
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            
-            <a class="btn btn-sm btn-outline-secondary" href="#"> Login </a>
-          </div>
-        </nav>
-      </header>
+      <div class="col-1">  
+        <a class="btn btn-sm btn-outline-secondary" href="#"> Login </a>
+      </div>
+    </nav>
+  </header>
 
-      <main role="main" class="flex-shrink-0">
+      <main class="row">
         <div class="container">
-          <input type="text" name="texto"  id="itexto">
-          <h1 class="mt-5">Sticky footer com navbar fixa</h1>
-        <p class="lead">Fixe um footer na parte inferior da viewport, em navegadores desktop, com estes HTML e CSS customizados. Além do mais, um navbar fixo foi adicionado com <code>padding-top: 60px;</code> e <code>body &gt; .container</code>.</p>
+          <!-- <input type="text" name="texto"  id="itexto">-->
+          <!-- <h1 class="mt-5">Notas</h1>  -->
+          <p class="lead mt-5">
+            <!-- <label for="imsg"> Escreva sua nota: </label> -->
+            <textarea name="msg" id="imsg" cols="30" rows="10">Crie sua nota...</textarea>
+          </p>
         </div>
       </main>
 
