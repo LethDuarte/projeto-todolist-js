@@ -22,18 +22,28 @@
     </nav>
   </header>
 
-      <main class="row">
-        <div class="container">
-          <!-- <input type="text" name="texto"  id="itexto">-->
-          <!-- <h1 class="mt-5">Notas</h1>  -->
-          <p class="lead mt-5">
-            <!-- <label for="imsg"> Escreva sua nota: </label> -->
-            <textarea name="msg" id="imsg" cols="30" rows="10">Crie sua nota...</textarea>
+      <main class="row flex-row container mx-auto justify-content-around">
+        <div class="nota">
+          
+          <div class="form-group lead mt-5">
+            <label for="itexto">Nota</label>
+            <textarea class="form-control" id="itexto" rows="3"></textarea>
+          </div>
+
+          <p>
+            <button type="button" class="btn btn-primary btn-lg">Criar nota</button>
+            <button type="button" class="btn btn-secondary btn-lg">Limpar nota</button>
+          </p>
+        </div>
+
+        <div class="arquivo lead mt-5">
+          <p class="itemarq">
+            Lavar o carro.
           </p>
         </div>
       </main>
 
-      <footer class="footer mt-auto py-3">
+      <footer class="footer mt-auto py-3 text-center fixed-bottom">
         <div class="container">
           <span class="text-muted">@Letícia Duarte Rosa. 2022.</span>
         </div>
