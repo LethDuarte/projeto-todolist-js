@@ -7,6 +7,8 @@
     <title>To Do List</title>
     <!--css padrão-->
     <link rel="stylesheet" href="estilos/estilo-padrao.css">
+    <!-- css media-queries -->
+    <link rel="stylesheet" href="estilos/media-queries.css">
     <!-- css bootstrap -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
@@ -22,32 +24,32 @@
     </nav>
   </header>
 
-      <main class="row flex-row container mx-auto justify-content-around">
-        <div class="nota">
-          
-          <div class="form-group lead mt-5">
-            <label for="itexto">Nota</label>
-            <textarea class="form-control" id="itexto" rows="3"></textarea>
-          </div>
+  <main class="row container mx-auto justify-content-around">
+    <div class="nota">
+      
+      <div class="form-group lead mt-5">
+        <label for="itexto">Nota</label>
+        <textarea class="caixa" id="itexto" rows="3"></textarea>
+      </div>
 
-          <p>
-            <button type="button" class="btn btn-primary btn-lg">Criar nota</button>
-            <button type="button" class="btn btn-secondary btn-lg">Limpar nota</button>
-          </p>
-        </div>
+      <p>
+        <button type="button" class="btn btn-primary btn-lg">Criar nota</button>
+        <button type="button" class="btn btn-secondary btn-lg">Limpar nota</button>
+      </p>
+    </div>
 
-        <div class="arquivo lead mt-5">
-          <p class="itemarq">
-            Lavar o carro.
-          </p>
-        </div>
-      </main>
+    <div class="arquivo lead mt-5">
+      <p class="itemarq">
+        Lavar o carro.
+      </p>
+    </div>
+  </main>
 
-      <footer class="footer mt-auto py-3 text-center fixed-bottom">
-        <div class="container">
-          <span class="text-muted">@Letícia Duarte Rosa. 2022.</span>
-        </div>
-      </footer>
+  <footer class="footer mt-auto py-3 text-center fixed-bottom">
+    <div class="container">
+      <span class="text-muted">@Letícia Duarte Rosa. 2022.</span>
+    </div>
+  </footer>
     
 </body>
 </html>

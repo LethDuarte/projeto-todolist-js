@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*dispositivos pequenos */
+@media only screen and (max-width: 992px) {
+    nav.row{
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    a.navbar-brand{
+        max-width: 50%;
+    }
+
+    main.row{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    main.row > div{
+        width: 100%;
+    }
+
+    div.nota > p{
+        text-align: center;
+    }
+}

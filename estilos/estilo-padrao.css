@@ -3,6 +3,7 @@
 main{
     margin-top: 100px;
     width: 80%;
+    height: 80vh;
 }
 
 label{
@@ -10,11 +11,16 @@ label{
 }
 div.nota{
     width: 50%;
+    height: 100%;
 }
 
-textarea.form-control{
+div.form-group{
+    height: 80%;
+}
+
+textarea.caixa{
     width: 100%;
-    height: 500px;
+    height: 90%;
     padding: 5px;
     border-radius: 5px;
 }
@@ -25,7 +31,7 @@ div.arquivo{
 
 p.itemarq{
     width: 100%;
-    padding: 5px;
-    border: 1px solid black;
+    padding: 10px;
+    border: 1px solid rgb(118, 118, 118);
     border-radius: 5px;
 }
