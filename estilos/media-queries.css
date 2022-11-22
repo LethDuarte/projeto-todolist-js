@@ -1,6 +1,14 @@
 @charset "UTF-8";
 
-/*dispositivos pequenos */
+/* smartphone - botões*/
+@media only screen and (max-width: 450px){
+    button {
+        width: 40%;
+        /* height: 80%; */
+    }
+}
+
+/* smartphone e tablet - geral */
 @media only screen and (max-width: 992px) {
     nav.row{
         width: 100%;
