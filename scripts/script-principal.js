@@ -1,8 +1,14 @@
 var nota = document.getElementById('itexto').value;
-var paragrafo = document.getElementsByClassName('itemarq').toString();
+//var paragrafo = document.getElementsByClassName('itemarq');
 
 function criarNota(){
-    paragrafo.innerHTML = " ";
-    console.log(typeof nota);
-    console.log(typeof paragrafo);
+    var nota = document.getElementById('itexto').value;
+    var paragrafo = document.getElementById('arquivo');
+    var arquivo = [];
+
+    arquivo.push(nota);
+
+    paragrafo.innerHTML = "passa nada" + arquivo[0];
+
+    console.log(arquivo);
 }
