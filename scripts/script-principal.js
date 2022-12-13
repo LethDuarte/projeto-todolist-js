@@ -1,34 +1,32 @@
 var nota = document.getElementById('itexto').value;
-//var paragrafo = document.getElementsByClassName('itemarq');
 var arquivo = [];
 
 function criarNota(){
     var nota = document.getElementById('itexto');
-    //var paragrafo = document.getElementById('itemarq');
-    var elementoPai = document.getElementById('arquivo');
-    var novoParagrafo = document.createElement('p');
 
     arquivo.push(nota.value);
+
+    criarElemento();
+    console.log(arquivo);
+}
+
+function criarElemento(){
+    var elementoPai = document.getElementById('arquivo');
+    var novoParagrafo = document.createElement('p');
 
     for(let item of arquivo){
         elementoPai.appendChild(novoParagrafo);
         novoParagrafo.className = 'itemarq';
         novoParagrafo.innerHTML = item;
+        //novoParagrafo.addEventListener('click', marcarNota());
     }
-    
-
-    //paragrafo.innerHTML = arquivo;
-
-    console.log(arquivo);
 }
 
-// function criarElemento(){
-//     var elementoPai = document.getElementById('arquivo');
-//     var novoParagrafo = document.createElement('p');
+function limparNota(){
+    document.getElementById('itexto').value = " ";
+}
 
-//     for(i=0; i++; i<arquivo.length){
-//         var texto = document.createTextNode(arquivo[i]);
-//         elementoPai.appendChild(novoParagrafo);
-//         novoParagrafo.appendChild(texto);
-//     }
+// function marcarNota(){
+//     var novoParagrafo = document.getElementsByTagName('p');
+//     novoParagrafo.style.textDecoration = 'line-through';
 // }
