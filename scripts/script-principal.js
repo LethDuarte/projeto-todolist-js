@@ -13,12 +13,18 @@ function criarNota(){
 function criarElemento(){
     var elementoPai = document.getElementById('arquivo');
     var novoParagrafo = document.createElement('p');
+    var novoBotao = document.createElement('button');
 
     for(let item of arquivo){
         elementoPai.appendChild(novoParagrafo);
         novoParagrafo.className = 'itemarq';
         novoParagrafo.innerHTML = item;
-        //novoParagrafo.addEventListener('click', marcarNota());
+        elementoPai.appendChild(novoBotao);
+        novoBotao.className = 'btn btn-primary btn-lg';
+        novoBotao.textContent = 'Feito';
+        novoBotao.addEventListener('click', function(){
+            novoParagrafo.style.textDecoration = 'underline';
+        })
     }
 }
 
@@ -27,6 +33,6 @@ function limparNota(){
 }
 
 // function marcarNota(){
-//     var novoParagrafo = document.getElementsByTagName('p');
-//     novoParagrafo.style.textDecoration = 'line-through';
+//     var paragrafo = document.querySelector('.itemarq');
+//     paragrafo.style.color = 'blue';
 // }
