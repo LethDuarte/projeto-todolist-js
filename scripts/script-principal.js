@@ -23,7 +23,7 @@ function criarElemento(){
         novoBotao.className = 'btn btn-primary btn-lg';
         novoBotao.textContent = 'Feito';
         novoBotao.addEventListener('click', function(){
-            novoParagrafo.style.textDecoration = 'underline';
+            novoParagrafo.style.textDecoration = 'line-through';
         })
     }
 }
@@ -31,8 +31,3 @@ function criarElemento(){
 function limparNota(){
     document.getElementById('itexto').value = " ";
 }
-
-// function marcarNota(){
-//     var paragrafo = document.querySelector('.itemarq');
-//     paragrafo.style.color = 'blue';
-// }
