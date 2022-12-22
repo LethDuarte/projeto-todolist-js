@@ -10,7 +10,7 @@
 
 /* smartphone e tablet - geral */
 @media only screen and (max-width: 992px) {
-    nav.row{
+    /* nav.row{
         width: 100%;
         margin-left: 0;
         justify-content: center;
@@ -18,15 +18,22 @@
 
     a.navbar-brand{
         max-width: 50%;
-    }
+    } */
 
-    main.row{
+    /* main.row{
         flex-direction: column;
         flex-wrap: nowrap;
-    }
+    } */
 
-    main.row > div{
+    /* main.row > div{
         width: 100%;
+    } */
+
+    div.nota{
+        margin-top: -180px;
+        height: 50%;
+        position: relative;
+        top: 0;
     }
 
     div.nota > p{
