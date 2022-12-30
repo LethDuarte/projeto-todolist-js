@@ -20,7 +20,7 @@ function criarElemento(){
         novoParagrafo.className = 'itemarq';
         novoParagrafo.innerHTML = item;
         elementoPai.appendChild(novoBotao);
-        novoBotao.className = 'btn btn-primary btn-sm';
+        novoBotao.className = 'btn btn-primary btn-sm mb-2';
         novoBotao.textContent = 'Feito';
         novoBotao.addEventListener('click', function(){
             novoParagrafo.style.textDecoration = 'line-through';

@@ -1,42 +1,22 @@
 @charset "UTF-8";
 
+/* telas pequenas */
+@media only screen and (max-width: 300px){
+    .btn{
+        font-size: 0.75rem;
+    }
+}
 /* smartphone - botões*/
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 600px){
     button {
         width: 40%;
         /* height: 80%; */
     }
 }
 
-/* smartphone e tablet - geral */
+/* tablet - geral */
 @media only screen and (max-width: 992px) {
-    /* nav.row{
-        width: 100%;
-        margin-left: 0;
-        justify-content: center;
+    div.nota{
+        height: 80%;
     }
-
-    a.navbar-brand{
-        max-width: 50%;
-    } */
-
-    /* main.row{
-        flex-direction: column;
-        flex-wrap: nowrap;
-    } */
-
-    /* main.row > div{
-        width: 100%;
-    } */
-
-    /* div.nota{
-        margin-top: -180px;
-        height: 50%;
-        position: relative;
-        top: 0;
-    }
-
-    div.nota > p{
-        text-align: center;
-    } */
 }
